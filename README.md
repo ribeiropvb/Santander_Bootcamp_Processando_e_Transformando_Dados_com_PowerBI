@@ -14,10 +14,10 @@ Estabelecemos uma ligação direta entre o Power BI Desktop e o MySQL na Azure, 
 # 4. Análise e Correção da Base:
 Após importar, revisamos os dados:
 
-    - Cabeçalhos e Tipos de Dados: Ajustamos erros e definimos os tipos corretos.
-    - Valores Monetários: Convertidos para "decimal fixo" para precisão.
-    - Tratamento de Nulos: Identificamos um valor nulo, decidindo mantê-lo, dada a sua relevância.
-    - Funcionários Sem Gerente: Usando Power Query no Power BI, adicionamos a coluna "FuncionarioSemGerente". Através da função "if", identificamos se "Super_ssn" era nulo, classificando como "Sim" ou "Não".
+- Cabeçalhos e Tipos de Dados: Ajustamos erros e definimos os tipos corretos.
+- Valores Monetários: Convertidos para "decimal fixo" para precisão.
+- Tratamento de Nulos: Identificamos um valor nulo, decidindo mantê-lo, dada a sua relevância.
+- Funcionários Sem Gerente: Usando Power Query no Power BI, adicionamos a coluna "FuncionarioSemGerente". Através da função "if", identificamos se "Super_ssn" era nulo, classificando como "Sim" ou "Não".
 
 # 5. Análise de Gerência dos Departamentos:
 Examinamos a tabela "azure_company departament", especificamente a coluna "azure_company.employee(Mgr_ssn)", para verificar departamentos sem gerentes. Resultado: Todos os departamentos têm gerentes atribuídos.
